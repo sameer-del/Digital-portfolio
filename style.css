@@ -32,6 +32,12 @@ header img{
     margin-left: 50px;
     
 }
+.main-section div{
+  line-height: 2rem;
+}
+.main-section div h1{
+  padding: 10px 0;
+}
 header .tittle  {
     text-align: center; 
     flex: 1; 
@@ -43,8 +49,9 @@ header .tittle  {
     font-family: 'Nosifer', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 3px 2px rgba(254,243,216,0.6);
+    text-shadow: 2px 3px 2px rgba(254,243,216,0.6); 
 }
+
 .tittle h1 span{
     font-size: 15px;
     text-transform: lowercase;
@@ -68,6 +75,7 @@ header .tittle  {
   
   .nav-list nav li {
     margin: 0 80px; 
+    
   }
   
   .nav-list nav a {
@@ -75,8 +83,13 @@ header .tittle  {
     color: white; 
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+   
   }
-  
+  .nav-list nav a:hover{
+    color: aquamarine;
+    
+    
+  }
 .main-section{
     height: 100vh;
     background: rgb(15,22,79);
@@ -95,6 +108,7 @@ header .tittle  {
     justify-content: center;
     flex-direction: column;
 }
+
 .about h1{
     font-family: 'Nosifer', sans-serif;
 }
@@ -116,8 +130,16 @@ header .tittle  {
     justify-content: center;
 }
 .education-info{
-  padding: 3%;
+  padding-left: 30px ;
   font-family: 'Lato', sans-serif;
+}
+.education-info p{
+  margin-left: 30px;
+  
+}
+.education h3{
+  padding: 10px;
+
 }
 .skill{
   margin: 5%;
@@ -125,6 +147,12 @@ header .tittle  {
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
+}
+.skill h3{
+  padding: 10px;
+}
+.skill-set h3{
+  padding: 10px;
 }
 .skill h1{
   font-family: 'Nosifer', sans-serif;
@@ -134,13 +162,29 @@ header .tittle  {
 }
 
 .skill-set{
-  padding: 15px 0px 15px 55px;
+  /*padding: 15px 0px 15px 55px;*/
   font-family: 'Lato', sans-serif;
 }
 .skill-set ul{
   display: flex;
   justify-content: space-around;
 }
+.skill-set li {
+  list-style: none;
+  margin-bottom: 8px;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.skill-set li::before {
+  content: "🎓";
+  margin-right: 8px;
+}
+
 .skill-set h3{
   margin-top: 25px;
 }
@@ -199,7 +243,9 @@ header .tittle  {
   justify-content: center;
   margin: 3%;
 }
-
+.resume p{
+  text-align: center;
+}
 
 footer {
   
@@ -223,11 +269,13 @@ footer {
 
 .social-links {
   list-style: none;
-  padding: 0;
+ 
+  padding-top: 3px;
 }
 
 .social-links li {
   display: inline; 
+  
   margin-right: 20px; 
 }
 
@@ -261,7 +309,7 @@ footer {
   }
   .nav-list {
     display: flex;
-    flex-direction: column;
+    
     height: auto;
   }
   .nav-list nav ul {
@@ -273,6 +321,28 @@ footer {
   .skill-set p{
     padding: 0;
     font-family: 'Lato', sans-serif;
+  }
+  .about p{
+    padding: 1%;
+    line-height: 2rem;
+    
+  }
+  .main-section div{
+    line-height: 2rem;
+  }
+  .main-section div h1{
+    padding: 10px 0;
+  }
+  .education-info p{
+    padding: 0px 30px;
+  }
+  .skill-set ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill-set p{
+    padding: 10px;
   }
 }
 
